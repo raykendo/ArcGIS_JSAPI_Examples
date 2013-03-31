@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" />   
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+  <title>A Little Map Happy</title>
+  <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/js/esri/css/esri.css" />
+  <script src="http://serverapi.arcgisonline.com/jsapi/arcgis/3.4/"></script>
+  <!-- Load your project JavaScript and CSS -->
+  <link rel="stylesheet" type="text/css" href="css/MapHappy.css" media="screen" />
+</head>
+  <body>
+	<div class="header">
+		<h1>Map Happy</h1>
+		<h2>A silly application by Ken Doman</h2>
+		<p>Navigate using the larger map. Click one of the smaller maps to swap with the larger map. Best viewed on a desktop browser.</p>
+	</div>
+	<div id="slave_container1" class='contain smaller'>
+		<div id="map2" class="fitmap"></div>
+	</div>
+	<div id="slave_container2" class='contain smaller'>
+		<div id="map3" class="fitmap"></div>
+	</div>
+	<div id="slave_container3" class='contain smaller'>
+		<div id="map4" class="fitmap"></div>
+	</div>
+	<div id="master_container" class='contain main'>
+		<div id="map1" class="fitmap"></div>
+	</div>
+	<div id="slave_container4" class='contain smaller'>
+		<div id="map5" class="fitmap"></div>
+	</div>
+	<div id="slave_container5" class='contain smaller'>
+		<div id="map6" class="fitmap"></div>
+	</div>
+	<div id="slave_container6" class='contain smaller'>
+		<div id="map7" class="fitmap"></div>
+	</div>
+	<div id="slave_container7" class='contain smaller'>
+		<div id="map8" class="fitmap"></div>
+	</div>
+	<script src="js/MapHappy.js"></script> 
+  </body>
+</html>
