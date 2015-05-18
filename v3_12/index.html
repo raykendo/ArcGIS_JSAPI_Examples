@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.12/esri/css/esri.css">
+    <style>
+      html, body, #map {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #FFF;
+        overflow: hidden;
+        font-family: "Trebuchet MS";
+      }
+    </style>
+    <script src="http://js.arcgis.com/3.12/"></script>
+    <script>
+
+      require(["esri/map", 
+        "esri/layers/ArcGISTiledMapServiceLayer",
+        "esri/layers/ArcGISDynamicMapServiceLayer",
+        "esri/layers/ImageParameters", 
+        "dojo/domReady!"], function(Map, ArcGISTiledMapServiceLayer, ArcGISDynamicMapServiceLayer, ImageParameters) {
+        var map = new Map("map", {
+          basemap: "topo",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
+          center: [-122.45, 37.75], // longitude, latitude
+          zoom: 6
+        });
+        
+        var tiled = new ArcGISTiledMapServiceLayer("http://sampleserver6.arcgisonline.com/arcgis/rest/services/WorldTimeZones/MapServer");
+        
+        var imageParameters = new ImageParameters();
+        imageParameters.format = "jpeg"; //set the image type to PNG24, note default is PNG8.
+
+        //Takes a URL to a non cached map service.
+        var dynamic = new ArcGISDynamicMapServiceLayer("http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Demographics/ESRI_Population_World/MapServer", {
+          "opacity" : 0.5,
+          "imageParameters" : imageParameters
+        });
+        
+        map.addLayers([tiled, dynamic]);
+        
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
