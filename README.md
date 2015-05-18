@@ -6,3 +6,8 @@ The following applications are designed to load current and older versions of th
 
 - [Basic Map](http://raykendo.github.io/ArcGIS_JSAPI_Examples/v3_13/index.html) - A simple world map loading a tiled and dynamic map service.
 - [Compact Map](http://raykendo.github.io/ArcGIS_JSAPI_Examples/v3_13/compact.html) - The same map as above, but loading using the "Compact" edition for mobile apps.
+
+# v. 3.12
+
+- [Basic Map](http://raykendo.github.io/ArcGIS_JSAPI_Examples/v3_12/index.html) - A simple world map loading a tiled and dynamic map service.
+- [Compact Map](http://raykendo.github.io/ArcGIS_JSAPI_Examples/v3_12/compact.html) - The same map as above, but loading using the "Compact" edition for mobile apps.
