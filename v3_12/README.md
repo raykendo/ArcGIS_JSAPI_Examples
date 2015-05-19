@@ -6,3 +6,7 @@ This is a simple example of setting up a simple map application, by creating a m
 
 - [Basic Map](http://raykendo.github.io/ArcGIS_JSAPI_Examples/v3_12/index.html) - A simple world map loading a tiled and dynamic map service.
 - [Compact Map](http://raykendo.github.io/ArcGIS_JSAPI_Examples/v3_12/compact.html) - The same map as above, but loading using the "Compact" edition for mobile apps.
+
+## Major changes to this version
+
+See [What's new in Version 3.12](https://developers.arcgis.com/javascript/jshelp/new_v312.html) for details.
